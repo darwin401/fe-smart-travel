@@ -93,7 +93,7 @@ export class SearchComponent {
   }
 
   openSnackBar() {
-    this._snackBar.open('El rango de fechas es necesario','⚠️',{
+    this._snackBar.open('Complete los datos de forma correcta','⚠️',{
       duration: 2000, 
       horizontalPosition: 'center',
       verticalPosition: 'top'

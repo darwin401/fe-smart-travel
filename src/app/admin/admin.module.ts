@@ -7,6 +7,8 @@ import { ListarHotelesComponent } from './pages/listar-hoteles/listar-hoteles.co
 import { EditarHotelComponent } from './pages/editar-hotel/editar-hotel.component';
 import { CrearHotelComponent } from './pages/crear-hotel/crear-hotel.component';
 import { PagesComponent } from './pages.component';
+import { DetailsComponent } from './pages/details/details.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,12 +16,16 @@ import { PagesComponent } from './pages.component';
     ListarHotelesComponent,
     EditarHotelComponent,
     CrearHotelComponent,
-    PagesComponent
+    PagesComponent,
+    DetailsComponent
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
+    FormsModule,
+    
     AdminRoutingModule,
-    MaterialModule
+    MaterialModule,
   ]
 })
 export class AdminModule { }

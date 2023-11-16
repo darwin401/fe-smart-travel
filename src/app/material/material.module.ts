@@ -17,6 +17,13 @@ import { CommonModule } from '@angular/common';
  import {MatDialogModule} from '@angular/material/dialog';
  import {MatSnackBarModule} from '@angular/material/snack-bar';
  import {MatDividerModule} from '@angular/material/divider';
+ import {MatTableModule} from '@angular/material/table';
+ import {MatPaginatorModule} from '@angular/material/paginator';
+ import {MatSortModule} from '@angular/material/sort';
+ import {MatSliderModule} from '@angular/material/slider';
+ import {MatTooltipModule} from '@angular/material/tooltip';
+ import {MatProgressBarModule} from '@angular/material/progress-bar';
+ import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [],
@@ -37,6 +44,13 @@ import { CommonModule } from '@angular/common';
     MatDialogModule,
     MatSnackBarModule,
     MatDividerModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatSliderModule,
+    MatTooltipModule,
+    MatProgressBarModule,
+    MatCheckboxModule,
   ],
   exports: [
     CommonModule,
@@ -55,6 +69,13 @@ import { CommonModule } from '@angular/common';
     MatDialogModule,
     MatSnackBarModule,
     MatDividerModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatSliderModule,
+    MatTooltipModule,
+    MatProgressBarModule,
+    MatCheckboxModule,
   ]
 })
 export class MaterialModule { }

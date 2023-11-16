@@ -1,1 +1,103 @@
-<p>crear-hotel works!</p>
+<form [formGroup]="hotel">
+    <div class="header">
+        <h1>Registrar un nuevo hotel</h1>
+    </div>
+    <div class="content-form">
+
+        <div *ngIf="hotel.get('image')?.value" class="content-input-img">
+            <img [src]="hotel.get('image')?.value" alt="Imagen" />
+            <section class="example-section">
+                <mat-checkbox formControlName="available" class="example-margin"
+                    color="primary">Disponible</mat-checkbox>
+            </section>
+        </div>
+
+        <div class="example-form-fields">
+
+            <mat-form-field>
+                <mat-label>Nombre</mat-label>
+                <input matInput formControlName="name" placeholder="Nombre" />
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Ciudad</mat-label>
+                <mat-select formControlName="city">
+                    <mat-option *ngFor="let city of cities" [value]="city.value">
+                        {{ city.viewValue }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Direccion</mat-label>
+                <input matInput formControlName="direction" placeholder="Cll 0 # 0" />
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Imagen Url</mat-label>
+                <input matInput formControlName="image" placeholder="Imagen Url" />
+            </mat-form-field>
+        </div>
+
+    </div>
+    <mat-divider></mat-divider>
+    <div class="header">
+        <h1>Registrar Habitaciones</h1>
+        <button mat-raised-button color="primary" (click)="addNewBedroom()">Agregar habitación</button>
+    </div>
+
+    <ng-container formArrayName="bedrooms" *ngFor="let bedroom of bedrooms.controls; let i = index">
+
+        <div class="row mt-2" [formGroupName]="i">
+            <div class="content-form">
+                <div *ngIf="bedroom.get('image')?.value" class="content-input-img">
+                    <img [src]="bedroom.get('image')?.value" alt="Imagen" />
+                    <section class="example-section">
+                        <mat-checkbox formControlName="available" class="example-margin" color="primary">Disponible</mat-checkbox>
+                    </section>
+                </div>
+        
+                <div class="example-form-fields">
+            
+                    <mat-form-field>
+                        <mat-label>Tipo</mat-label>
+                        <mat-select formControlName="type">
+                            <mat-option *ngFor="let type of typeRoom" [value]="type.value">
+                                {{ type.viewValue }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+            
+                    <mat-form-field>
+                        <mat-label>Ubicación </mat-label>
+                        <mat-select formControlName="location">
+                            <mat-option *ngFor="let location of roomLocation" [value]="location.value">
+                                {{ location.viewValue }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+            
+                    <mat-form-field floatLabel="always">
+                        <mat-label>Costo noche</mat-label>
+                        <input matInput formControlName="nightPrice" type="number" class="example-right-align" placeholder="0" />
+                        <span matTextPrefix>$&nbsp;</span>
+                        <span matTextSuffix>.00</span>
+                    </mat-form-field>
+            
+                    <mat-form-field>
+                        <mat-label>Imagen Url</mat-label>
+                        <input matInput formControlName="image" placeholder="Imagen Url" />
+                    </mat-form-field>
+            
+                </div>
+                <button mat-icon-button class="btn-delete" (click)="remove(i)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>
+        </div>
+    </ng-container>
+    <div style="text-align: center">
+        <button mat-raised-button color="primary" (click)="saveHotel()">Crear Hotel</button>
+    </div>
+    
+</form>

@@ -12,14 +12,14 @@
         <img class="avatar mat-elevation-z8" src="../assets/logo.png" alt="logo">
         <h4 class="name">Smart Travel</h4>
         
-        <button mat-button class="menu-button" >
-            <mat-icon>playlist_add</mat-icon>
-            <span><a [routerLink]="['crear']">Crear Hoteles</a></span>
+        <button mat-button class="menu-button" (click)="navigate('hoteles')">
+            <mat-icon>real_estate_agent</mat-icon>
+            <span>Mis Hoteles</span>
         </button>
         
-        <button mat-button class="menu-button" >
-            <mat-icon>real_estate_agent</mat-icon>
-            <span><a routerLink="hoteles">Mostrar Hoteles</a></span>
+        <button mat-button class="menu-button" (click)="navigate('crear')">
+            <mat-icon>playlist_add</mat-icon>
+            <span>Crear Hoteles</span>
         </button>
 
         <mat-divider></mat-divider>

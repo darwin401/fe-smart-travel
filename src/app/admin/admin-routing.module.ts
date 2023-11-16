@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CrearHotelComponent } from './pages/crear-hotel/crear-hotel.component';
 import { ListarHotelesComponent } from './pages/listar-hoteles/listar-hoteles.component';
 import { EditarHotelComponent } from './pages/editar-hotel/editar-hotel.component';
+import { DetailsComponent } from './pages/details/details.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,9 @@ const routes: Routes = [
   },
   {
     path: 'editar/:id', component: EditarHotelComponent
+  },
+  {
+    path: 'detalle-hotel/:id', component: DetailsComponent
   },
 ];
 

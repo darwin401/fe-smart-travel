@@ -44,10 +44,6 @@ export class ConfirmReservationComponent {
     
   }
 
-  getFloatLabelValue(): any {
-    return ;
-  }
-
   sendData(){    
 
     if(this.form.invalid){

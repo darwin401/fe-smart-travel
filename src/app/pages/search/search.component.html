@@ -1,54 +1,45 @@
 <div class="search-hotel">
-    <form [formGroup]="form">
-      <div class="example-form-fields">
-        <div class="content-filds">
-          <mat-form-field>
-            <mat-label>Seleccionar Ciudad</mat-label>
-            <mat-select formControlName="city">
-              <mat-option *ngFor="let citie of cities" [value]="citie.value">
-                {{ citie.viewValue }}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-        <div class="content-filds">
-          <mat-form-field>
-            <mat-label>Entrada - Salida</mat-label>
-            <mat-date-range-input [rangePicker]="picker" [min]="min">
-              <input
-                matStartDate
-                formControlName="start"
-                placeholder="Entrada"
-              />
-              <input matEndDate formControlName="end" placeholder="Salida" />
-            </mat-date-range-input>
-            <mat-datepicker-toggle
-              matIconSuffix
-              [for]="picker"
-            ></mat-datepicker-toggle>
-            <mat-date-range-picker #picker></mat-date-range-picker>
-          </mat-form-field>
-        </div>
-        <div class="content-filds">
-          <button mat-fab (click)="decrement()">
-            <mat-icon>remove</mat-icon>
-          </button>
-          <mat-form-field class="pax">
-            <input matInput placeholder="0" formControlName="pax" />
-            <mat-icon matSuffix>person</mat-icon>
-          </mat-form-field>
-          <button mat-fab (click)="increment()">
-            <mat-icon>add</mat-icon>
-          </button>
-        </div>
-        <div style="margin: 10px;">
-
-          <button mat-fab extended color="warn" (click)="search()">
-            Buscar
-          </button>
-          <button mat-button (click)="clearFilter()">Borrar</button>
-        </div>
-
+  <form [formGroup]="form">
+    <div class="example-form-fields">
+      <div class="content-filds">
+        <mat-form-field>
+          <mat-label>Seleccionar Ciudad</mat-label>
+          <mat-select formControlName="city">
+            <mat-option *ngFor="let citie of cities" [value]="citie.value">
+              {{ citie.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
       </div>
-    </form>
+      <div class="content-filds">
+        <mat-form-field>
+          <mat-label>Entrada - Salida</mat-label>
+          <mat-date-range-input [rangePicker]="picker" [min]="min">
+            <input matStartDate formControlName="start" placeholder="Entrada" />
+            <input matEndDate formControlName="end" placeholder="Salida" />
+          </mat-date-range-input>
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-date-range-picker #picker></mat-date-range-picker>
+        </mat-form-field>
+      </div>
+      <div class="content-filds">
+        <button mat-fab (click)="decrement()">
+          <mat-icon>remove</mat-icon>
+        </button>
+        <mat-form-field class="pax" floatLabel="always">
+          <mat-label>Personas</mat-label>
+          <input matInput formControlName="pax" type="number" class="example-right-align" placeholder="1" max="8"
+            maxlength="1" />
+          <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+        <button mat-fab (click)="increment()">
+          <mat-icon>add</mat-icon>
+        </button>
+      </div>
+      <div style="margin: 10px">
+        <button mat-fab extended color="warn" (click)="search()">Buscar</button>
+        <button mat-button (click)="clearFilter()">Borrar</button>
+      </div>
+    </div>
+  </form>
 </div>
