@@ -94,9 +94,16 @@ export class CrearHotelComponent {
       this.hotel.value.id = hotels.length + 1;
       hotels.push(this.hotel.value);
       localStorage.setItem('hoteles', JSON.stringify(hotels));
+
+      this.clearForm();
     }
   }
 
+  clearForm(){
+    this.hotel.reset();
+    this.bedrooms.clear();
+    this.addNewBedroom();
+  }
   openSnackBar( message: string ) {
     this._snackBar.open(message,'',{
       duration: 2000, 
