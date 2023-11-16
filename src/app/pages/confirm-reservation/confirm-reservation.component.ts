@@ -60,10 +60,10 @@ export class ConfirmReservationComponent {
       if(hotel.id == this.booking.id){
         return hotel.bedrooms.filter((bedroom:any) =>{
           if(bedroom.id == this.booking.bedrooms.id){
-            let update = bedroom;
-            update.booking = this.booking.bedrooms.booking;
-            update.booking.dataUser = this.form.value;
-            return update;
+            let newBooking = bedroom;
+            newBooking.booking = this.booking.bedrooms.booking;
+            newBooking.booking.dataUser = this.form.value;
+            return newBooking;
           }
         });
       }

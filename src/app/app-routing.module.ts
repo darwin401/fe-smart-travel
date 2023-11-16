@@ -4,17 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
 import { LandingComponent } from './pages/landing/landing.component';
-import { DashboardComponent } from './pages/admin/pages/dashboard/dashboard.component';
 import { BookingsComponent } from './pages/bookings/bookings.component';
 
 const routes: Routes = [
-  // { 
-  //   path: 'dashboard', 
-  //   component: ,
-  //   children: [
-  //     { path: '', component: DashboardComponent}
-  //   ]
-  // },
+  { 
+    path: 'dashboard',
+    loadChildren: () => import('./admin/admin.module').then( m => m.AdminModule ),
+  },
   
   { path: '', component: LandingComponent },
   { path: 'booking', component: BookingsComponent },

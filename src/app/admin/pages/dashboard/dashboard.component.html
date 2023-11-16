@@ -1,0 +1,38 @@
+<mat-toolbar class="toolbar">
+    <img width="110" alt="LogoST" src="../assets/smart-travel.png" />
+    <span class="example-spacer"></span>
+    <div class="example-button-row">
+        <mat-icon>person</mat-icon>
+        Admin
+    </div>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+        <img class="avatar mat-elevation-z8" src="../assets/logo.png" alt="logo">
+        <h4 class="name">Smart Travel</h4>
+        
+        <button mat-button class="menu-button" >
+            <mat-icon>playlist_add</mat-icon>
+            <span>Crear Hoteles</span>
+        </button>
+        
+        <button mat-button class="menu-button" >
+            <mat-icon>real_estate_agent</mat-icon>
+            <span>Mostrar Hoteles</span>
+        </button>
+
+        <mat-divider></mat-divider>
+        
+        <button mat-button class="menu-button" >
+            <mat-icon>logout</mat-icon>
+            <span>Salir</span>
+        </button>
+
+    </mat-drawer>
+    <mat-drawer-content>
+        <div class="content">
+
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>

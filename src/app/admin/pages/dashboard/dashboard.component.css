@@ -1,0 +1,52 @@
+.toolbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #cacaca36;
+    color: #0f0f0f;
+    font-weight: 600;
+}
+.example-spacer {
+    flex: 1 1 auto;
+}
+.example-button-row {
+    display: flex;
+    align-items: center;
+}
+mat-drawer-container {
+    height: calc(100vh - 65px);
+}
+.content {
+    height: calc(100vh - 95px);
+}
+mat-drawer {
+    margin: 4px;
+    width: 200px;
+    border-right: none;
+    background: #cacaca36;
+    color: #0f0f0f;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+}
+.avatar {
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.name {
+    margin-top: 6px;
+    font-weight: normal;
+}
+.menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    margin: 15px 0;
+}
