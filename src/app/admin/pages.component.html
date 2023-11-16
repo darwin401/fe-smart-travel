@@ -14,12 +14,12 @@
         
         <button mat-button class="menu-button" >
             <mat-icon>playlist_add</mat-icon>
-            <span>Crear Hoteles</span>
+            <span><a [routerLink]="['crear']">Crear Hoteles</a></span>
         </button>
         
         <button mat-button class="menu-button" >
             <mat-icon>real_estate_agent</mat-icon>
-            <span>Mostrar Hoteles</span>
+            <span><a routerLink="hoteles">Mostrar Hoteles</a></span>
         </button>
 
         <mat-divider></mat-divider>
@@ -32,7 +32,7 @@
     </mat-drawer>
     <mat-drawer-content>
         <div class="content">
-
+            <router-outlet></router-outlet>
         </div>
     </mat-drawer-content>
 </mat-drawer-container>
