@@ -1,0 +1,26 @@
+.lista-bedrooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .example-card {
+    max-width: 350px;
+    margin: 8px;
+  }
+  img {
+    height: 170px;
+    width: 280px;
+  }
+
+  .price {
+    color: rgb(38, 104, 35);
+  }
+
+  svg#clouds {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+  }

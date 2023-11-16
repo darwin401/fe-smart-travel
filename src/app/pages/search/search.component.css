@@ -1,0 +1,30 @@
+.search-hotel {
+    padding: 10px 20px;
+    background: #eee;
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+}
+.example-form-fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 40px;
+}
+.content-filds {
+    display: flex;
+    margin: 5px;
+}
+.content-filds mat-form-field{
+    flex: 1 0 10px;
+}
+.content-filds button {
+    background: #f5f5f5;
+    border-radius: 2px;
+    color: black;
+    margin: 0 5px;
+}
+.pax {
+    width: 7rem
+}
+

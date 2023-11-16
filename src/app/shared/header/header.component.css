@@ -1,0 +1,20 @@
+.toolbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #cacaca36;
+    color: #0f0f0f;
+    font-weight: 600;
+}
+.toolbar img {
+    margin: 0 16px;
+}
+.example-spacer {
+    flex: 1 1 auto;
+}
+img {
+    cursor: pointer;
+}

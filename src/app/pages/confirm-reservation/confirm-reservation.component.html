@@ -1,0 +1,128 @@
+<h1 mat-dialog-title>Reservar Habitación</h1>
+<h2>{{ booking.name | titlecase }}</h2>
+<div class="container">
+  <mat-dialog-content class="mat-typography">
+    <div class="example-container">
+        <div class="info-data">
+        <div>
+          <b>Destino:</b> {{ booking.city | titlecase }}, <b>Dirección:</b>
+          {{ booking.direction }}, 
+        </div>
+        <div>
+           <b>Desde:</b>  {{ booking.bedrooms.booking.start }} <b>Hasta:</b> {{ booking.bedrooms.booking.end }}, 
+        </div>
+        <div>
+          <b>Habitacion:</b> {{ booking.bedrooms.type | titlecase }}, <b>Noches:</b>
+          {{ booking.bedrooms.booking.totalNight }} 
+        </div>
+      </div>
+      <h3 class="price">
+        <b>Costo total:</b>
+        {{
+          booking.bedrooms.nightPrice * booking.bedrooms.booking.totalNight
+            | currency
+        }} 
+      </h3>
+
+      <form [formGroup]="form">
+        <div class="example-form-fields">
+          <div>
+            <mat-form-field >
+              <mat-label>Nombre</mat-label>
+              <input matInput formControlName="name" placeholder="Nombre"  />
+            </mat-form-field>
+
+            <mat-form-field >
+              <mat-label>Apellidos</mat-label>
+              <input matInput formControlName="lastName" placeholder="Apellidos"  />
+            </mat-form-field>
+
+            <mat-form-field class="example-form-field" >
+              <mat-label>Fecha de nacimiento</mat-label>
+              <input matInput formControlName="birthday" [matDatepicker]="datepicker" />
+              <mat-datepicker-toggle
+                matIconSuffix
+                [for]="datepicker"
+              ></mat-datepicker-toggle>
+
+              <mat-datepicker #datepicker >
+                <mat-datepicker-actions>
+                  <button mat-button matDatepickerCancel>Cancelar</button>
+                  <button mat-raised-button color="primary" matDatepickerApply>
+                    Applicar
+                  </button>
+                </mat-datepicker-actions>
+              </mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field >
+              <mat-label>Genero</mat-label>
+              <mat-select formControlName="gender" >
+                <mat-option
+                  *ngFor="let genero of gender"
+                  [value]="genero.value"
+                >
+                  {{ genero.viewValue }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field >
+              <mat-label>Tipo Documento</mat-label>
+              <mat-select formControlName="docType" >
+                <mat-option
+                  *ngFor="let document of docType"
+                  [value]="document.value"
+                >
+                  {{ document.viewValue }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" >
+              <mat-label>Documento</mat-label>
+              <input type="tel" formControlName="numDoc" matInput placeholder="0.000.00.00" />
+              <mat-icon matSuffix>assignment_ind</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" >
+              <mat-label>Email</mat-label>
+              <input type="email" formControlName="email" matInput placeholder="Ex. pat@example.com" />
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" >
+              <mat-label>Telefono</mat-label>
+              <input type="tel" formControlName="phone" matInput placeholder="310-000-0000" />
+              <mat-icon matSuffix>mode_edit</mat-icon>
+            </mat-form-field>
+          </div>
+        </div>
+        <h4>Contacto de emergencia</h4>
+        <div class="example-form-fields">
+          <div>
+            <mat-form-field >
+              <mat-label>Nombre Completo</mat-label>
+              <input matInput formControlName="emergencyContact" placeholder="Nombre completo"  />
+            </mat-form-field>
+            <mat-form-field class="example-full-width" >
+              <mat-label>Telefono</mat-label>
+              <input type="tel" formControlName="emergencyPhone" matInput placeholder="310-000-0000" />
+              <mat-icon matSuffix>mode_edit</mat-icon>
+            </mat-form-field>
+          </div>
+        </div>
+      </form>
+    </div>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="center">
+    <button type="button" mat-button mat-dialog-close>Cancelar</button>
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="sendData()"
+    >
+      Reservar
+    </button>
+  </mat-dialog-actions>
+</div>

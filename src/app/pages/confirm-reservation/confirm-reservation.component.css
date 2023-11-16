@@ -1,0 +1,58 @@
+.flexbox-container {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flexbox-container > div {
+    width: 50%;
+    padding: 10px;
+}
+
+.flexbox-container > div:first-child {
+    margin-right: 20px;
+}
+
+.example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+  }
+  
+  .example-container mat-form-field {
+    width: 220px;
+  }
+  
+  .example-container form {
+    margin-bottom: 20px;
+  }
+  
+  .example-container form > * {
+    margin: 12px 0;
+  }
+  
+  .example-container .mat-radio-button {
+    margin: 0 12px;
+  }
+  
+  .example-form-fields {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .price {
+    color: rgb(38, 104, 35);
+    font-size: 18px;
+  }
+  .container {
+    width: 70em;
+  }
+  .info-data {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .info-data div {
+    margin-right: 10px;
+  }
+  h2 {
+    margin-bottom: 0;
+    text-align: center;
+  }

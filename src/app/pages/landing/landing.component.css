@@ -1,0 +1,21 @@
+svg#clouds {
+  position: fixed;
+  bottom: -160px;
+  left: -230px;
+  z-index: -10;
+  width: 1920px;
+}
+
+.example-card {
+  max-width: 350px;
+  margin: 8px;
+}
+.lista-hoteles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+img {
+  height: 170px;
+  width: 280px;
+}
