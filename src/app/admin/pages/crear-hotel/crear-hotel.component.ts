@@ -20,7 +20,7 @@ export class CrearHotelComponent {
   
 
   typeRoom: any[] = [
-    { value: 'Indivudual', viewValue: 'Indivudual' },
+    { value: 'Individual', viewValue: 'Individual' },
     { value: 'Doble', viewValue: 'Doble' },
     { value: 'Triple', viewValue: 'Triple' },
     { value: 'Familiar', viewValue: 'Familiar' },

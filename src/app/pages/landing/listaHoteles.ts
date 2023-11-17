@@ -11,12 +11,12 @@ const listaHoteles = [
                 "id": 1,
                 "type": "Individual",
                 "available": false,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 85,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -24,12 +24,12 @@ const listaHoteles = [
                 "id": 2,
                 "type": "Doble",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 110,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -37,12 +37,12 @@ const listaHoteles = [
                 "id": 3,
                 "type": "Individual",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 85,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -50,12 +50,12 @@ const listaHoteles = [
                 "id": 4,
                 "type": "Doble",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 110,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -73,12 +73,12 @@ const listaHoteles = [
                 "id": 1,
                 "type": "Triple",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 240,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -86,12 +86,12 @@ const listaHoteles = [
                 "id": 2,
                 "type": "Doble",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 180,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -99,12 +99,12 @@ const listaHoteles = [
                 "id": 3,
                 "type": "Individual",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 100,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -122,12 +122,12 @@ const listaHoteles = [
                 "id": 1,
                 "type": "Triple",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 320,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -135,12 +135,12 @@ const listaHoteles = [
                 "id": 2,
                 "type": "Doble",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 280,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -148,12 +148,12 @@ const listaHoteles = [
                 "id": 3,
                 "type": "Individual",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 180,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -161,12 +161,12 @@ const listaHoteles = [
                 "id": 4,
                 "type": "Doble",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 280,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -174,12 +174,12 @@ const listaHoteles = [
                 "id": 5,
                 "type": "Doble",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 280,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -187,12 +187,12 @@ const listaHoteles = [
                 "id": 6,
                 "type": "Doble",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 280,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -210,12 +210,12 @@ const listaHoteles = [
                 "id": 1,
                 "type": "Triple",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 240,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -223,12 +223,12 @@ const listaHoteles = [
                 "id": 2,
                 "type": "Doble",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 180,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -246,12 +246,12 @@ const listaHoteles = [
                 "id": 1,
                 "type": "Triple",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "2023/11/15",
                     "end": "2023/11/17"
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 200,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -259,12 +259,12 @@ const listaHoteles = [
                 "id": 2,
                 "type": "Doble",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 170,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -272,12 +272,12 @@ const listaHoteles = [
                 "id": 3,
                 "type": "Individual",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 130,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -285,12 +285,12 @@ const listaHoteles = [
                 "id": 4,
                 "type": "Doble",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 170,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -308,12 +308,12 @@ const listaHoteles = [
                 "id": 1,
                 "type": "Triple",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 290,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -321,12 +321,12 @@ const listaHoteles = [
                 "id": 2,
                 "type": "Doble",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 210,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
@@ -334,12 +334,12 @@ const listaHoteles = [
                 "id": 3,
                 "type": "Individual",
                 "available": true,
-                "location":'',
+                "location": "Piso 1",
                 "booking": {
                     "start": "",
                     "end": ""
                 },
-                "tax": 0,
+                "tax":8,
                 "nightPrice": 140,
                 "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/07/habitacion-hotel-2764541.jpg"
             },
