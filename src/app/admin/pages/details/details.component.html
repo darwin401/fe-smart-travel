@@ -1,6 +1,7 @@
 <div class="container">
     <h1>Reservas en {{hotel.name | titlecase}} </h1>
     <h3>{{hotel.city | titlecase}}, {{hotel.direction | titlecase}} </h3>
+
     <mat-accordion>
         <mat-expansion-panel *ngFor="let room of bookings" (opened)="panelOpenState = true"
             (closed)="panelOpenState = false">
@@ -21,4 +22,5 @@
             <div>Contacto de emergencia: {{room.booking?.dataUser?.emergencyContact }} - {{room.booking?.dataUser?.emergencyPhone }}</div>
         </mat-expansion-panel>
     </mat-accordion>
+
 </div>

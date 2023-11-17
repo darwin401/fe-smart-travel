@@ -1,38 +1,37 @@
-<mat-toolbar class="toolbar">
-    <img width="110" alt="LogoST" src="../assets/smart-travel.png" />
-    <span class="example-spacer"></span>
-    <div class="example-button-row">
-        <mat-icon>person</mat-icon>
-        Admin
-    </div>
-</mat-toolbar>
+<div class="example-container">
+    <mat-toolbar color="primary" class="toolbar">
+        <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+        <img width="110" alt="LogoST" src="../assets/smart-travel.png" />
 
-<mat-drawer-container class="example-container">
-    <mat-drawer mode="side" opened>
-        <img class="avatar mat-elevation-z8" src="../assets/logo.png" alt="logo">
-        <h4 class="name">Smart Travel</h4>
-        
-        <button mat-button class="menu-button" (click)="navigate('hoteles')">
-            <mat-icon>real_estate_agent</mat-icon>
-            <span>Mis Hoteles</span>
-        </button>
-        
-        <button mat-button class="menu-button" (click)="navigate('crear')">
-            <mat-icon>playlist_add</mat-icon>
-            <span>Crear Hoteles</span>
-        </button>
+    </mat-toolbar>
+    <mat-sidenav-container class="example-sidenav-container" [hasBackdrop]="hasBackdrop.value">
+        <mat-sidenav #snav [mode]="mobileQuery?.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery?.matches"
+            fixedTopGap="56" opened>
+            <img class="avatar mat-elevation-z8" src="../assets/logo.png" alt="logo">
+            <h4 class="name">Smart Travel</h4>
 
-        <mat-divider></mat-divider>
-        
-        <button mat-button class="menu-button" [routerLink]="['/']">
-            <mat-icon>logout</mat-icon>
-            <span>Salir</span>
-        </button>
+            <button mat-button class="menu-button" (click)="navigate('hoteles')">
+                <mat-icon>real_estate_agent</mat-icon>
+                <span>Mis Hoteles</span>
+            </button>
 
-    </mat-drawer>
-    <mat-drawer-content>
-        <div class="content">
-            <router-outlet></router-outlet>
-        </div>
-    </mat-drawer-content>
-</mat-drawer-container>
+            <button mat-button class="menu-button" (click)="navigate('crear')">
+                <mat-icon>playlist_add</mat-icon>
+                <span>Crear Hoteles</span>
+            </button>
+
+            <mat-divider></mat-divider>
+
+            <button mat-button class="menu-button" [routerLink]="['/']">
+                <mat-icon>logout</mat-icon>
+                <span>Salir</span>
+            </button>
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+            <div class="content">
+                <router-outlet></router-outlet>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
