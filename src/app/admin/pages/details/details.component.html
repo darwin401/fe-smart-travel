@@ -1,1 +1,24 @@
-<p>details works!</p>
+<div class="container">
+    <h1>Reservas en {{hotel.name | titlecase}} </h1>
+    <h3>{{hotel.city | titlecase}}, {{hotel.direction | titlecase}} </h3>
+    <mat-accordion>
+        <mat-expansion-panel *ngFor="let room of bookings" (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Desde : {{room.booking?.start}} Hasta : {{room.booking?.end}}  
+                </mat-panel-title>
+                <mat-panel-description>
+                    <mat-icon>person</mat-icon> {{room.booking?.pax}} 
+                    <div style="margin: 0 2rem;">Tipo de Habitación: {{room.type}}</div>
+                    <div>Noches: {{room.booking?.totalNight}}</div>                   
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <h4>Datos de usuario</h4>
+            <div>Nombre: {{room.booking?.dataUser?.name }} {{room.booking?.dataUser?.lastName }}</div>
+            <div>Contacto: {{room.booking?.dataUser?.email }} - {{room.booking?.dataUser?.phone }}</div>
+            <div>Documento: {{room.booking?.dataUser?.docType }} {{room.booking?.dataUser?.numDoc }}</div>
+            <div>Contacto de emergencia: {{room.booking?.dataUser?.emergencyContact }} - {{room.booking?.dataUser?.emergencyPhone }}</div>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

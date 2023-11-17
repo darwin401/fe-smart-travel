@@ -1,6 +1,6 @@
 <form [formGroup]="hotel">
     <div class="header">
-        <h1>Registrar un nuevo hotel</h1>
+        <h1>{{titulo | titlecase}} hotel</h1>
     </div>
     <div class="content-form">
 
@@ -77,11 +77,18 @@
                         </mat-select>
                     </mat-form-field>
             
-                    <mat-form-field floatLabel="always">
+                    <mat-form-field class="money-coste" floatLabel="always">
                         <mat-label>Costo noche</mat-label>
                         <input matInput formControlName="nightPrice" type="number" class="example-right-align" placeholder="0" />
                         <span matTextPrefix>$&nbsp;</span>
                         <span matTextSuffix>.00</span>
+                    </mat-form-field>
+            
+                    <mat-form-field class="money-pax" floatLabel="always">
+                        <mat-label>Impuesto</mat-label>
+                        <input matInput formControlName="tax" type="number" class="example-right-align" placeholder="0" />
+                        <span matTextPrefix>$&nbsp;</span>
+                        <span matTextSuffix>%</span>
                     </mat-form-field>
             
                     <mat-form-field>
@@ -90,14 +97,14 @@
                     </mat-form-field>
             
                 </div>
-                <button mat-icon-button class="btn-delete" (click)="remove(i)">
+                <button mat-icon-button class="" (click)="remove(i)">
                     <mat-icon>delete</mat-icon>
                 </button>
             </div>
         </div>
     </ng-container>
     <div style="text-align: center">
-        <button mat-raised-button color="primary" (click)="saveHotel()">Crear Hotel</button>
+        <button mat-raised-button color="primary" (click)="saveHotel()">{{textButton}} Hotel</button>
     </div>
     
 </form>

@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CrearHotelComponent } from './pages/crear-hotel/crear-hotel.component';
 import { ListarHotelesComponent } from './pages/listar-hoteles/listar-hoteles.component';
-import { EditarHotelComponent } from './pages/editar-hotel/editar-hotel.component';
 import { DetailsComponent } from './pages/details/details.component';
 
 const routes: Routes = [
@@ -13,7 +12,7 @@ const routes: Routes = [
     path: 'crear', component: CrearHotelComponent
   },
   {
-    path: 'editar/:id', component: EditarHotelComponent
+    path: 'editar/:id', component: CrearHotelComponent
   },
   {
     path: 'detalle-hotel/:id', component: DetailsComponent

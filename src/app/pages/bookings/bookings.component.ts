@@ -33,7 +33,7 @@ export class BookingsComponent {
   openDialog(booking: any) {
     const dialogRef = this.dialog.open(ConfirmReservationComponent, { data: booking });
     dialogRef.afterClosed().subscribe((result) => {
-      console.log(`Dialog result: ${result}`);
+      
     });
   }
 

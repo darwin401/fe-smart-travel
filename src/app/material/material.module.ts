@@ -24,6 +24,7 @@ import { CommonModule } from '@angular/common';
  import {MatTooltipModule} from '@angular/material/tooltip';
  import {MatProgressBarModule} from '@angular/material/progress-bar';
  import {MatCheckboxModule} from '@angular/material/checkbox';
+ import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [],
@@ -51,6 +52,7 @@ import { CommonModule } from '@angular/common';
     MatTooltipModule,
     MatProgressBarModule,
     MatCheckboxModule,
+    MatExpansionModule,
   ],
   exports: [
     CommonModule,
@@ -76,6 +78,7 @@ import { CommonModule } from '@angular/common';
     MatTooltipModule,
     MatProgressBarModule,
     MatCheckboxModule,
+    MatExpansionModule,
   ]
 })
 export class MaterialModule { }

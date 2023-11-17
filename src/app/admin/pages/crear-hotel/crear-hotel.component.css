@@ -56,4 +56,10 @@ img {
   .btn-delete {
     align-self: center;
 }
+.money-coste {
+  max-width: 12%;
+}
+.money-pax {
+  max-width: 9%;
+}
 
