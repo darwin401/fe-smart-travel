@@ -3,6 +3,8 @@
 Se realiza el despliegue de la pagina Web estática en AZURE y se genera la siguiente ruta 
 `https://white-flower-0962fe010.4.azurestaticapps.net`
 
+## Se implementa el patron de diseño base MVVM
+
 ## Descripción del Proyecto
 Este repositorio contiene la solución a dos historias de usuario como parte de una prueba técnica utilizando Angular. El proyecto está enfocado en resolver desafíos específicos a través de la implementación de funcionalidades y componentes dentro del framework Angular.
 
