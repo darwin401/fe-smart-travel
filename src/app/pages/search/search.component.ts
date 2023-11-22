@@ -45,6 +45,10 @@ export class SearchComponent {
       city: [''],
       pax: [1],
     });
+
+  }
+  ngOnInit(){
+    this.search();
   }
 
   cities: City[] = [

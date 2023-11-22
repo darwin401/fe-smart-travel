@@ -31,7 +31,7 @@ export class LandingComponent {
     }else{
       this.listHotels = hotelesList;
     }
-    localStorage.removeItem('dataSearch');
+    // localStorage.removeItem('dataSearch');
     localStorage.removeItem('bedrooms');
 
   }
